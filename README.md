@@ -1,15 +1,26 @@
-# vue-kashi-contest
+## vue-kashi-contest
  使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
 
-# 技术栈
+## 技术栈
 vue2 + vue-router + less + ES6/ES7 + webpack + axios
 
-# 提示
->  npm install    安装依赖
->  npm run dev    运行
->  npm run build  打包
+## 开发构建步骤
 
-# 目录结构
+``` bash
+# 全局安装 yarn
+$ npm install yarn --global
+
+# 依赖所有安装
+$ yarn install
+
+# 开发模式
+$ yarn dev
+
+# 构建项目
+$ yarn build
+```
+
+### 目录结构
 
 * api
     *  api.js         公共接口
