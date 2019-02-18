@@ -13,34 +13,27 @@ vue2 + vue-router + less + ES6/ES7 + webpack + axios
 
 * api
     *  api.js         公共接口
-    *  enroll.s      每个vue页面对应使用的接口
+    *  http           二次封装axios
 * assets
     *  font              字体
-    *  img                  图片
-    *  json                json数据
-    *  style                样式
+    *  img               图片
+    *  json              json数据
+    *  style             样式
 * components
     *  dialog                
-        *  dialog           弹窗
+        *  dialog               弹窗
     *  error                
-        *  error-notfound           404页面
+        *  error-notfound       404页面
     *  footed                
         *  footed-tab           底部tab栏
     *  header                
-        *  header           头部导航栏
+        *  header               头部导航栏
     *  list                
-        *  list-box           公共列表页面
+        *  list-box             公共列表页面
 * router          路由配置
 * tools
-    *  common              常用的工具
-    *  http                  二次封装axios
-    *  wxShare                微信分享配置，暂未实现
-* views
-    *  awards                
-        *  Awards           弹窗
-    *  enroll                
-        *  Enroll           404页面
-    *  introduce                
-        *  Introduce           底部tab栏
-* global          定义公共变量 
+    *  common                常用的工具
+    *  wxShare               微信分享配置
+* views           页面
+* global          定义公共变量 
 * server          服务器配置 
