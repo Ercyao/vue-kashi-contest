@@ -1,21 +1,18 @@
-# jw
+# vue-kashi-contest
 
-> 2018年首届“喀什市旅游手信”设计大赛
+> 使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
 
+# vue-kashi-contest
+> 使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
 
-## Build Setup
+# 技术栈
+vue2 + vue-router + less + ES6/ES7 + webpack + axios
 
-``` bash
-安装依赖
-npm install
+# 提示
+>  npm install    安装依赖
+>  npm run dev    运行
+>  npm run build  打包
 
-运行
-npm run dev
-
-打包编译
-npm run build
-
-```
 # 目录结构
 
 * api
