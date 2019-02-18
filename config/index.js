@@ -56,13 +56,11 @@ module.exports = {
     dist_without_mainfest,
     dist_without_commonchunk,
     public_path,
-    index: path.resolve(__dirname, '../../../cblink/cugtrip/public/jwcontest/index.html'),
-    assetsRoot: path.resolve(__dirname, '../../../cblink/cugtrip/public/jwcontest'),
     // // Template for index.html
-    // index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../dist/index.html'),
 
     // // Paths
-    // assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: './',
 

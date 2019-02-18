@@ -94,7 +94,7 @@ const hrefLink = getRouterLink()
 // 生成带有前端路由信息的普通链接
 export function wechatOauth() {
   // ${location.href}
-  window.location = `${apiOrigin}/wechat/mock?id=2?redirect=${hrefLink}`  //模拟用户
-  // window.location = `${apiOrigin}/wechat/login?redirect=${hrefLink}`
+  // window.location = `${apiOrigin}/wechat/mock?id=2?redirect=${hrefLink}`  //模拟用户
+  window.location = `${apiOrigin}/wechat/login?redirect=${hrefLink}`
   return
 }
