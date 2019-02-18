@@ -1,5 +1,6 @@
 ## vue-kashi-contest
  使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
+ 
  ( https://ercyao.github.io/vue-kashi-contest/contest/index.html )
 
 
