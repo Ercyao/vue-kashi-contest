@@ -22,6 +22,8 @@ $ yarn build
 
 http://localhost:8880
 ```
+##效果图
+![效果图](https://github.com/Ercyao/vue-kashi-contest/blob/master/src/assets/img/GIF.gif)
 
 ### 目录结构
 
