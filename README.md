@@ -1,9 +1,5 @@
 # vue-kashi-contest
-
-> 使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
-
-# vue-kashi-contest
-> 使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
+ 使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
 
 # 技术栈
 vue2 + vue-router + less + ES6/ES7 + webpack + axios
