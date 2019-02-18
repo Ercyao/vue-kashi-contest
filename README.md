@@ -2,8 +2,10 @@
  使用vue搭建的关于2018年首届“喀什市旅游手信”设计大赛的项目
  ( https://ercyao.github.io/vue-kashi-contest/contest/index.html )
 
+
 ## 技术栈
 vue2 + vue-router + less + ES6/ES7 + webpack + axios
+
 
 ## 开发构建步骤
 
@@ -22,8 +24,13 @@ $ yarn build
 
 http://localhost:8880
 ```
-##效果图
+
+
+### 效果图
+
 ![效果图](https://github.com/Ercyao/vue-kashi-contest/blob/master/src/assets/img/GIF.gif)
+
+
 
 ### 目录结构
 
