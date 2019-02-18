@@ -1,0 +1,337 @@
+//------------------------------------- ├ 公共样式 ┆ └------------------------------------// 
+//  公共字体大小
+// @bgsize: 36px;
+// @mdsize: 32px;
+// @smsize: 30px;
+// @minisize: 26px;
+@bgsize: calc(.5rem + 2vmin);
+@mdsize: calc(.5rem + 1.8vmin);
+@smsize: calc(.5rem + 1.6vmin);
+@minisize: calc(.5rem + 1.4vmin);
+// 字体大小
+.fz-calc(@n: 1vmin) {
+    font-size: calc(.5rem + (@n));
+}
+
+// 公共颜色
+@black: #333333;
+@blue: #4DA7EE;
+@gray: #777777;
+@orange: #F68F00;
+@yellow: #F3C345;
+@tint: #F5F5F5;
+// 盒子宽高
+.size(@w, @h) {
+    width: @w; // height: @h;
+    height: calc(.5rem + (@h));
+}
+
+// 字体大小
+.fz(@fz) {
+    font-size: @fz;
+}
+
+// 字体粗细
+.fb (@bold: bold) {
+    font-weight: @bold
+}
+
+// 行高与高度
+.lh(@h, @lh: @h) {
+    // height: @h;
+    // line-height: @lh;
+    height: calc(.5rem + (@h));
+    line-height: calc(.5rem + (@lh));
+}
+
+//  字体大小与行高与高度
+.fz-lh(@fz, @h) {
+    // .fz(@fz);
+    .fz-calc(@fz);
+    .lh(@h);
+}
+
+// 字体大小与粗细
+.fz-fb(@fz, @bold) {
+    // .fz(@fz);
+    .fz-calc(@fz);
+    .fb(@bold);
+}
+
+// 字体颜色
+.color(@color) {
+    color: @color;
+}
+
+// 背景颜色
+.bg(@color) {
+    background: @color;
+}
+
+.color-bg(@color, @bg) {
+    .color(@color);
+    .bg(@bg);
+}
+
+/*text-align 文本对齐*/
+
+.text-align (@v: center) {
+    text-align: @v;
+}
+
+.tc {
+    .text-align;
+}
+
+.tl {
+    .text-align(left);
+}
+
+.tr {
+    .text-align(right);
+}
+
+// 禁止换行, 文本溢出省略号显示 (一行)
+.ellipsis() {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// 文本溢出省略号显示 (多行)
+// 只支持webkit 浏览器, 解决方案：高度 = 行高*行数// height: 90px; line-height: 30px; -webkit-line-clamp: 3;
+.ellipsis-mult(@n: 3) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @n;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text-word(@tab: 2px) {
+    display: block;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-indent: @tab;
+}
+
+// 边框样式
+.border-top (@width: 1px, @color: #DBDBDB) {
+    border-top: @width solid @color;
+    -webkit-border-top: @width solid @color;
+    -moz-border-top: @width solid @color;
+}
+
+.border-bottom (@width: 1px, @color: #DBDBDB) {
+    border-bottom: @width solid @color;
+    -webkit-border-bottom: @width solid @color;
+    -moz-border-bottom: @width solid @color;
+}
+
+.border-right (@width: 1px, @color: #DBDBDB) {
+    border-right: @width solid @color;
+    -webkit-border-right: @width solid @color;
+    -moz-border-right: @width solid @color;
+}
+
+.border-left (@width: 1px, @color: #DBDBDB) {
+    border-left: @width solid @color;
+    -webkit-border-left: @width solid @color;
+    -moz-border-left: @width solid @color;
+}
+
+.border (@width: 1px, @color: #DBDBDB) {
+    border: @width solid @color;
+    -webkit-border: @width solid @color;
+    -moz-border: @width solid @color;
+}
+
+// 盒子阴影
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+    box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+}
+
+//圆角
+.border-radius (@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+// //一行截断
+// .text-ellipsis{ overflow: hidden;white-space: nowrap;text-overflow: ellipsis; }
+// //多行截断
+// .text-clamp (@line) { overflow: hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:@line; }
+// 弹性盒子
+.flex-wrap {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.flex-around {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -o-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.flex-between {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+}
+
+// 导航栏
+// 主要区域：overflow: hidden; margin-left: xx; margin-right: xx;
+.sidebar(left, @top: 0, @width, @index: 99, @left: 0) {
+    position: absolute;
+    top: @top;
+    left: @left;
+    z-index: @index;
+    width: @width;
+}
+
+.sidebar(right, @top: 0, @width, @index: 99, @right: 0) {
+    position: absolute;
+    top: @top;
+    right: @right;
+    z-index: @index;
+    width: @width;
+}
+
+.sidebar(top, @width: 100%, @index: 99) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: @index;
+    width: @width;
+}
+
+.sidebar(bottom, @width: 100%, @index: 99) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: @index;
+    width: @width;
+}
+
+// 水平居中
+.horizontal-center(@width: 90%, @margin: 0) {
+    width: @width;
+    margin: @margin auto;
+}
+
+// 水平垂直居中
+.vertical-center() {
+    .pa;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.blur-text (@heigth: calc(.5rem + 20vmin), @leng: 1.5rem) {
+    height: @heigth;
+    overflow-y: hidden;
+    -webkit-mask-image: linear-gradient( #1a1a1a 0, transparent calc(100% + @leng));
+}
+
+.fixedScoll {
+    // position: absolute;
+    // z-index: 1;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // bottom: calc(.5rem + 9.8vmin);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    // padding-bottom: calc(.5rem + 9.8vmin);
+    -webkit-overflow-scrolling: touch;
+}
+
+// vux样式,兼容大屏幕
+.weui-toast__content {
+    // font-size: 30px;
+    font-size: calc(1rem + 0.6vmin);
+}
+
+// 箭头
+.icon-arrow {
+    width: 3vmin;
+    height: 3vmin;
+    border-top: .5vmin solid @blue;
+    border-left: .5vmin solid @blue;
+    margin: 0 5px;
+}
+
+.arrow-up {
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-down {
+    transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+//  未写完
+//  .arrow-left{transform: rotate(0deg);}
+//  .arrow-right{transform: rotate(-135deg);}
