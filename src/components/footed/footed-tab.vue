@@ -27,7 +27,7 @@ export default {
         { id: 1, title: "大赛介绍", path: "/introduce" },
         { id: 4, title: "我要投票", path: "/vote" },
         { id: 2, title: "奖项设置", path: "/awards" },
-        // { id: 3,title: "我要报名",path: "/enroll" }
+        { id: 3,title: "我要报名",path: "/enroll" }
       ],
       phone: false
     }

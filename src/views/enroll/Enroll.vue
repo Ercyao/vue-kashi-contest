@@ -44,8 +44,8 @@
           <span class="box-row-title">大赛咨询</span>
           <div class="box-row-detail">
             <p>添加客服微信，咨询报名相关问题</p>
-            <p>联系人：匠匠</p>
-            <p>联系电话：18718673201(微信同号)</p>
+            <p>联系人：xxxxx</p>
+            <p>联系电话：xxxxxxxxx</p>
           </div>
         </div>
         <div class="box-img">
